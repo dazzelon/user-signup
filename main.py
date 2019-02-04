@@ -184,4 +184,5 @@ def valid_signup():
     username = request.args.get('username')
     return render_template('welcome.html', username=username)
 
-app.run()
+if __name__=="__main__":
+    app.run()
